@@ -78,19 +78,18 @@
             padding: 6px;
             margin-bottom: 12px;
         }
-        .input-name, 
-        .inputt-email, 
-        .input-password 
+        .value
         {
-            margin-bottom: 22px;
+            color: var(--very-light-pink);
+            font-size: var(--md);
+            margin: 8px 0 32px 0;
         }
-        
-        .primary-button
+        .secondary-button
         {
-            background-color: var(--hospital-green);
+            background-color: var(--white);
             border-radius: 8px;
-            border: none;
-            color: var(--white);
+            border: 1px solid var(--hospital-green);
+            color: var(--hospital-green);
             width: 100%;
             cursor: pointer;
             font-size: var(--md);
@@ -127,14 +126,14 @@
             <form action="/" class="form">
                 <div>
                     <label for="name" class="label">Nombre</label>
-                    <input type="text" id="name" placeholder="Julian Munoz" class="input input-name">
+                    <p class="value">Julian Munoz</p>
                     <label for="email" class="label">Email</label>
-                    <input type="text" id="email" placeholder="tuemail@ivvyboutique.com" class="input input-email">
+                    <p class="value">tuemail@ivvyboutique.com</p>
                     <label for="passwrd" class="label">Clave:</label>
-                    <input type="password" id="new-passwrd" placeholder="*********" class="input input-password">
+                    <p class="value">**********</p>
                 </div>
                 
-                <input type="submit" value="Crear" class="primary-button login-button">
+                <input type="submit" value="Edit" class="secondary-button login-button">
             </form>
         </div>
     </div>
